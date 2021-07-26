@@ -1,0 +1,19 @@
+.card_logo{
+    position: relative;
+}
+.CardLogo1{
+    width: 30px;
+    height: 30px;
+}
+.CardLogo2 img{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 666;
+}
+.Footer{
+    padding: 50px;
+}

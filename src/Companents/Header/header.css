@@ -1,0 +1,95 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.gf-header__content{
+    border-bottom: 1px solid #dadce0;
+    background: #fff;
+    padding: 1rem 0;
+    transition: all 0.5s ease;
+}
+header.sticky{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #fc0054;
+  }
+.drop_hrd{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color:#5f6368;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+.drop_hrd .icon{
+    transition: all 0.3s ease;
+}
+.drop_hrd:active .icon{
+    transform: scale(0.9);
+}
+.hover_icon:hover{
+    background: rgba(95,99,104,.04);
+}
+
+.active_link{
+    background: rgba(95,99,104,.30) !important;
+}
+a.hover_link:hover{
+    color: #202124;
+    background-color: rgba(32,33,36,.04); 
+}
+
+.nav li a{
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+}
+
+.logo_hdr{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #8643DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.logo_hdr img{
+    width: 60%;
+    z-index: 3;
+}
+
+@media (max-width:768px){
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active_menu{
+        z-index: 888;
+        position: fixed;
+        background: #fff;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3s ease-in-out;
+    }
+    header .navigation li{
+        margin-bottom: 1rem;
+    }
+}

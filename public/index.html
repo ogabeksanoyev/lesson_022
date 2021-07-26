@@ -10,34 +10,62 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+   
+  
     <title>React App</title>
+    <style>
+      .active_btn{
+    background-color: rgba(97, 124, 204, 0.4) !important ; 
+    color: black !important;
+    font-weight: 600;
+}
+
+.scrollToTop-btn{
+  z-index: 999;
+        position: fixed;
+        background: rgba(85, 101, 121, 0.07);
+        color: #333;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        bottom: 10px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 22px;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        opacity: 0;
+        transition: all .3s ease;
+}
+.scrollToTop-btn.active_btn{
+        right: 20px;
+        opacity: 1;
+      }
+      .scrollToTop-btn:hover{
+        background-color: rgb(212, 209, 209);
+      }
+
+   
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="scrollToTop-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+
+
+
+
+
+
+<script src="./main.js"></script>
+
+
+<!-- <script>var Alert = ReactBootstrap.Alert;</script> -->
   </body>
 </html>

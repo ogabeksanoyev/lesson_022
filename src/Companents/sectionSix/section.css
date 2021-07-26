@@ -1,0 +1,54 @@
+.SectionSix{
+    padding: 50px 0;
+}
+.box_1 p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    color: #333;
+}
+.form_floating .form-controlx:focus {
+outline: none !important;
+}
+.form_floating input{
+    padding-bottom: .2rem;
+}
+.form-controlx{
+
+    display: block;
+  
+    width: 100%;
+    padding: 1rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form_floating{
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.form-controlx:focus{
+  
+}
+.form_floating>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem .75rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+}
+.form_floating > .form-controlx:focus ~ label{
+    opacity: .65;
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+}
